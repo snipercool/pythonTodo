@@ -1,0 +1,98 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+:root{
+    --bg-white: #fefefe;
+    --bg-white-secondary: #e0e0e0;
+    --bg-warning: #FFA900;
+    --bg-warning-secondary: #FF8800;
+    --bg-danger: #F93154;
+    --bg-danger-secondary: #CC0000;
+    --bg-success: #00B74A;
+    --bg-success-secondary: #007E33;
+    --bg-primary: #4285F4;
+    --bg-primary-secondary: #0d47a1;
+    --bg-dark: #2e2e2e;
+    --bg-dark-secondary: #212121;
+    --transition-speed: 0.5s;
+
+}
+body{
+    background-color: var(--bg-white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todoList{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+}
+
+.todoList p{
+    margin-right: 7px;
+    font-size: 24px;
+}
+
+.btn, span, input{
+    background: var(--bg-white-secondary);
+    border-radius: 0.5em;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 0 15px;
+    border: none;
+}
+
+hr{
+    width: 100%;
+}
+
+input{
+    width: 25%;
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn-success{
+    background-color: var(--bg-success);
+    color: white;
+    transition: var(--transition-speed);
+}
+.btn-success:hover{
+    background-color: var(--bg-success-secondary);
+    color: white;
+}
+
+.btn-warning{
+    background-color: var(--bg-warning);
+    color: white;
+    transition: var(--transition-speed);
+}
+.btn-warning:hover{
+    background-color: var(--bg-warning-secondary);
+    color: white;
+}
+
+.btn-danger{
+    background-color: var(--bg-danger);
+    color: white;
+    transition: var(--transition-speed);
+}
+.btn-danger:hover{
+    background-color: var(--bg-danger-secondary);
+    color: white;
+}
+
+.btn-primary{
+    background-color: var(--bg-primary);
+    color: white;
+    transition: var(--transition-speed);
+}
+.btn-primary:hover{
+    background-color: var(--bg-primary-secondary);
+    color: white;
+}
